@@ -1,0 +1,286 @@
+id: 035b67b3-4aa5-45f1-860b-664908a55a66
+name: Success Ladder Drivers Analysis
+type: 1
+canvas_id: 1dc6b5e8-61f2-4e53-9b0c-0cd4c5e1df37
+blocks:
+- auto_size: false
+  canvas_id: 1dc6b5e8-61f2-4e53-9b0c-0cd4c5e1df37
+  compute_settings: null
+  description: Visualizes credit friction impact on user engagement. Creates 4 charts/tables
+    analyzing success rates across credit cohorts, pre-run gating effects, friction
+    prevalence by persona, and warn-to-add-credits timing patterns using dark-themed
+    Plotly visualizations.
+  height: 1000
+  id: 0372bba8-8c90-4171-a437-754cc28d9c0f
+  layer_id: 035b67b3-4aa5-45f1-860b-664908a55a66
+  name: viz_credits_friction
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 14000
+  y: 0
+- auto_size: false
+  canvas_id: 1dc6b5e8-61f2-4e53-9b0c-0cd4c5e1df37
+  compute_settings: null
+  description: Creates a comprehensive activation analytics dashboard with a funnel
+    bar chart showing user success rates across 8 key milestones (24h run, 7d run,
+    first session, multi-day habits, etc.), time-to-milestone percentile tables, and
+    segmented success rates by OS, browser, device, country, and referrer source.
+  height: 1000
+  id: 3511581d-fd14-4be3-92d7-4cc5c2154c15
+  layer_id: 035b67b3-4aa5-45f1-860b-664908a55a66
+  name: viz_success_ladder
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 6000
+  y: 1400
+- auto_size: false
+  canvas_id: 1dc6b5e8-61f2-4e53-9b0c-0cd4c5e1df37
+  compute_settings: null
+  description: 'Engineers 28 friction metrics (24h & 7d windows) from user event logs
+    to identify barriers to adoption: credits warnings/exceeded, execution disruptions
+    (stop events), seat limits, and agent errors. Computes per-user counts, time-to-action
+    deltas, cohort flags, and hit-rate summaries to segment users by engagement friction.'
+  height: 1000
+  id: 6a1f4121-d623-4758-be37-c3a49a71ccc4
+  layer_id: 035b67b3-4aa5-45f1-860b-664908a55a66
+  name: friction_features
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 10000
+  y: 0
+- auto_size: false
+  canvas_id: 1dc6b5e8-61f2-4e53-9b0c-0cd4c5e1df37
+  compute_settings: null
+  description: 'Loads and profiles a 409K-row event dataset: displays row/column counts,
+    data types, null rates, sample values from key columns (event, OS, browser, device,
+    geo, etc.), and top 30 most frequent events with percentages.'
+  height: 1000
+  id: 812f05d7-85cd-45f8-a2a1-bbb7e9747533
+  layer_id: 035b67b3-4aa5-45f1-860b-664908a55a66
+  name: profile_data
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 0
+- auto_size: false
+  canvas_id: 1dc6b5e8-61f2-4e53-9b0c-0cd4c5e1df37
+  compute_settings: null
+  description: "Builds a user activation ladder tracking engagement milestones: run\
+    \ events within time windows (24h, 7d, first session), habit formation (2+ days,\
+    \ 3+ sessions in 14d), retention (return after day 7), shipping (publish/deploy\
+    \ within 60d), and post-ship usage\u2014plus time-to-reach metrics for canvas,\
+    \ build, run, and ship actions."
+  height: 1000
+  id: 8166c9df-d59c-4ca1-acf8-2c57d6cbd1ab
+  layer_id: 035b67b3-4aa5-45f1-860b-664908a55a66
+  name: user_ladder
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 2000
+  y: 0
+- auto_size: false
+  canvas_id: 1dc6b5e8-61f2-4e53-9b0c-0cd4c5e1df37
+  compute_settings: null
+  description: "Defines success in Zerve (a workflow tool) as a four-step ladder\u2014\
+    activate, habit, ship, maturity\u2014and analyzes which early behaviors and user\
+    \ personas drive progression. Finds 81% of users are passive observers, while\
+    \ active personas (agent-led, manual-led) show 84\u201392% activation rates. Reveals\
+    \ workflow-native entry points (canvas, notebook) and desktop access drive success;\
+    \ friction concentrates in highly active users but doesn't convert to shipping."
+  height: 1000
+  id: ab1cdb39-c0cd-443c-9c90-d6ffc0079361
+  layer_id: 035b67b3-4aa5-45f1-860b-664908a55a66
+  name: markdown_block
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 4
+  variables: null
+  width: 1600
+  x: 6000
+  y: 1900
+- auto_size: false
+  canvas_id: 1dc6b5e8-61f2-4e53-9b0c-0cd4c5e1df37
+  compute_settings: null
+  description: 'Visualizes agent impact through 4 interactive dashboards: user persona
+    distribution (donut chart), funnel conversion rates across 6 milestones by persona
+    (grouped bars), median time between milestones (styled table), and Markov transition
+    probability matrix from user session sequences.'
+  height: 1000
+  id: acaa632b-c209-4f47-a03b-1f8052d17f00
+  layer_id: 035b67b3-4aa5-45f1-860b-664908a55a66
+  name: viz_agent_impact
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 10000
+  y: 1400
+- auto_size: false
+  canvas_id: 1dc6b5e8-61f2-4e53-9b0c-0cd4c5e1df37
+  compute_settings: null
+  description: Segments users into three engagement personas (agent-led, manual-led,
+    observer-only) based on event patterns within 24h-7d windows. Outputs distribution
+    tables, ladder flag rates by persona, and funnel conversion metrics from entry
+    to shipping.
+  height: 1000
+  id: cc6cc27f-3730-4bb7-ba1c-01a51ba155dd
+  layer_id: 035b67b3-4aa5-45f1-860b-664908a55a66
+  name: persona_analysis
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 6000
+  y: 0
+- auto_size: false
+  canvas_id: 1dc6b5e8-61f2-4e53-9b0c-0cd4c5e1df37
+  compute_settings: null
+  description: Analyzes user event sequences by mapping raw events to canonical tokens
+    (AUTH, CANVAS, BUILD, RUN, etc.), sessionizing interactions with 30-min inactivity
+    gaps, identifying top session patterns overall and per persona, computing Markov
+    transition probabilities, and visualizing transition matrix as heatmap.
+  height: 1000
+  id: cd9c0079-8345-49a9-a67d-58abf6004105
+  layer_id: 035b67b3-4aa5-45f1-860b-664908a55a66
+  name: sequence_analysis
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 8000
+  y: 0
+- auto_size: false
+  canvas_id: 1dc6b5e8-61f2-4e53-9b0c-0cd4c5e1df37
+  compute_settings: null
+  description: "Analyzes product friction points (credits warnings, execution stops,\
+    \ seat limits, agent errors) across user success tiers\u2014showing friction prevalence,\
+    \ impact on activation/habit/shipping, and time-to-resolution metrics with visualizations."
+  height: 1000
+  id: d0a2a2d2-a688-4f77-90a1-47766f66cf64
+  layer_id: 035b67b3-4aa5-45f1-860b-664908a55a66
+  name: friction_analysis
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 12000
+  y: 0
+- auto_size: false
+  canvas_id: 1dc6b5e8-61f2-4e53-9b0c-0cd4c5e1df37
+  compute_settings: null
+  description: "Generates comprehensive activation funnel analytics across 4,771 users\u2014\
+    including overall conversion rates, time-to-milestone percentiles, and segmented\
+    \ performance by OS, browser, device, geography, traffic source, and product surface.\
+    \ Exports enriched ladder to CSV."
+  height: 1000
+  id: d88d04d6-ff9e-405c-88b5-4a515c88aa14
+  layer_id: 035b67b3-4aa5-45f1-860b-664908a55a66
+  name: rate_tables
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 4000
+  y: 0
+edges:
+- canvas_id: 1dc6b5e8-61f2-4e53-9b0c-0cd4c5e1df37
+  id: 04e4c75a-8509-4e88-9d8a-cde360ebe429
+  layer_id: 035b67b3-4aa5-45f1-860b-664908a55a66
+  source: 6a1f4121-d623-4758-be37-c3a49a71ccc4
+  target: d0a2a2d2-a688-4f77-90a1-47766f66cf64
+- canvas_id: 1dc6b5e8-61f2-4e53-9b0c-0cd4c5e1df37
+  id: 675815d9-bf6d-475d-9459-8974634465c4
+  layer_id: 035b67b3-4aa5-45f1-860b-664908a55a66
+  source: d88d04d6-ff9e-405c-88b5-4a515c88aa14
+  target: 3511581d-fd14-4be3-92d7-4cc5c2154c15
+- canvas_id: 1dc6b5e8-61f2-4e53-9b0c-0cd4c5e1df37
+  id: 80977a4b-5fe7-49fc-a941-dd35437f542c
+  layer_id: 035b67b3-4aa5-45f1-860b-664908a55a66
+  source: d88d04d6-ff9e-405c-88b5-4a515c88aa14
+  target: cc6cc27f-3730-4bb7-ba1c-01a51ba155dd
+- canvas_id: 1dc6b5e8-61f2-4e53-9b0c-0cd4c5e1df37
+  id: 84cfd095-3f93-40a7-b948-4724926205cf
+  layer_id: 035b67b3-4aa5-45f1-860b-664908a55a66
+  source: cd9c0079-8345-49a9-a67d-58abf6004105
+  target: acaa632b-c209-4f47-a03b-1f8052d17f00
+- canvas_id: 1dc6b5e8-61f2-4e53-9b0c-0cd4c5e1df37
+  id: 85fea1d1-ff61-4826-bbe8-4001425a2bbd
+  layer_id: 035b67b3-4aa5-45f1-860b-664908a55a66
+  source: 8166c9df-d59c-4ca1-acf8-2c57d6cbd1ab
+  target: d88d04d6-ff9e-405c-88b5-4a515c88aa14
+- canvas_id: 1dc6b5e8-61f2-4e53-9b0c-0cd4c5e1df37
+  id: 8b57c929-8ae9-4f58-8313-81c21867e345
+  layer_id: 035b67b3-4aa5-45f1-860b-664908a55a66
+  source: 6a1f4121-d623-4758-be37-c3a49a71ccc4
+  target: 0372bba8-8c90-4171-a437-754cc28d9c0f
+- canvas_id: 1dc6b5e8-61f2-4e53-9b0c-0cd4c5e1df37
+  id: 983bc281-ea3b-426f-9ade-b8e8a864b100
+  layer_id: 035b67b3-4aa5-45f1-860b-664908a55a66
+  source: 812f05d7-85cd-45f8-a2a1-bbb7e9747533
+  target: 8166c9df-d59c-4ca1-acf8-2c57d6cbd1ab
+- canvas_id: 1dc6b5e8-61f2-4e53-9b0c-0cd4c5e1df37
+  id: 99634c39-efd7-4411-9a01-ec9d2a62453e
+  layer_id: 035b67b3-4aa5-45f1-860b-664908a55a66
+  source: d0a2a2d2-a688-4f77-90a1-47766f66cf64
+  target: 0372bba8-8c90-4171-a437-754cc28d9c0f
+- canvas_id: 1dc6b5e8-61f2-4e53-9b0c-0cd4c5e1df37
+  id: c13d29b2-96a7-4a7a-be93-7f50232560a7
+  layer_id: 035b67b3-4aa5-45f1-860b-664908a55a66
+  source: cd9c0079-8345-49a9-a67d-58abf6004105
+  target: 6a1f4121-d623-4758-be37-c3a49a71ccc4
+- canvas_id: 1dc6b5e8-61f2-4e53-9b0c-0cd4c5e1df37
+  id: c80dfe07-ba4f-4356-900b-8c0ffe85f2da
+  layer_id: 035b67b3-4aa5-45f1-860b-664908a55a66
+  source: 8166c9df-d59c-4ca1-acf8-2c57d6cbd1ab
+  target: 3511581d-fd14-4be3-92d7-4cc5c2154c15
+- canvas_id: 1dc6b5e8-61f2-4e53-9b0c-0cd4c5e1df37
+  id: c8c41502-00d1-462b-9ba6-ced21be302c3
+  layer_id: 035b67b3-4aa5-45f1-860b-664908a55a66
+  source: 3511581d-fd14-4be3-92d7-4cc5c2154c15
+  target: ab1cdb39-c0cd-443c-9c90-d6ffc0079361
+- canvas_id: 1dc6b5e8-61f2-4e53-9b0c-0cd4c5e1df37
+  id: cbeccbce-d5a1-4601-be71-c6c0203bf043
+  layer_id: 035b67b3-4aa5-45f1-860b-664908a55a66
+  source: 812f05d7-85cd-45f8-a2a1-bbb7e9747533
+  target: d88d04d6-ff9e-405c-88b5-4a515c88aa14
+- canvas_id: 1dc6b5e8-61f2-4e53-9b0c-0cd4c5e1df37
+  id: f19bb478-569e-4fa9-9274-6139f33c53b2
+  layer_id: 035b67b3-4aa5-45f1-860b-664908a55a66
+  source: cc6cc27f-3730-4bb7-ba1c-01a51ba155dd
+  target: cd9c0079-8345-49a9-a67d-58abf6004105
+- canvas_id: 1dc6b5e8-61f2-4e53-9b0c-0cd4c5e1df37
+  id: f50334c5-e719-4bb7-bbeb-646c2bcc5963
+  layer_id: 035b67b3-4aa5-45f1-860b-664908a55a66
+  source: cc6cc27f-3730-4bb7-ba1c-01a51ba155dd
+  target: acaa632b-c209-4f47-a03b-1f8052d17f00
