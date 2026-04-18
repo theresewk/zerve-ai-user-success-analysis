@@ -1,5 +1,5 @@
 # zerve-ai-user-success-analysis
-Behavioral analytics project analyzing 4,700+ users to identify what drives success in a data platform. Combines persona segmentation, activation metrics, funnel analysis, and Markov chains to uncover friction points, usage patterns, and predictors of long-term user success.
+Behavioural analytics project analyzing 4,700+ users to identify what drives success in a data platform. Combines persona segmentation, activation metrics, funnel analysis, and Markov chains to uncover friction points, usage patterns, and predictors of long-term user success.
 
 > **Hackathon submission for Zerve.AI x HackerEarth March 2026 Data Challenge**
 
@@ -7,14 +7,14 @@ Behavioral analytics project analyzing 4,700+ users to identify what drives succ
 
 ## Overview
 
-This project explores a central question: **what drives successful usage of a data platform?**
+This project explores a central question: **what drives successful usage of a data platform?** for Zerve AI
 
-Using real-world event data from 4,771+ users, we analyze behavioral patterns, workflows, and friction points to identify what differentiates successful users from the rest.
+Using real-world event data from 4,771+ users, I analysed behavioral patterns, workflows, and friction points to identify what differentiates successful users from the rest.
 
 The project is structured around four analytical lenses:
 
 * **Execution** – how users interact with core features
-* **Persona** – behavioral segmentation of users
+* **Persona** – behavioural segmentation of users
 * **Entry** – onboarding and early activation signals
 * **Patterns** – session flows and long-term usage behavior
 
@@ -22,10 +22,10 @@ The project is structured around four analytical lenses:
 
 ## Objectives
 
-* Define and quantify "user success"
-* Identify behaviors that predict long-term engagement
+* Define and quantify what constitutes user success
+* Identify behaviours that predict long-term engagement
 * Detect friction points that block activation
-* Analyze how workflows evolve over time
+* Analyse how workflows evolve over time
 
 ---
 
@@ -49,7 +49,7 @@ Due to size and privacy constraints, the dataset is not included in this reposit
 
 ### 1. Persona Segmentation
 
-Users are grouped into behavioral personas:
+Users are grouped into behavioural personas:
 
 * **Agent-led** – rely heavily on automation/agents
 * **Manual-led** – primarily execute workflows manually
@@ -59,7 +59,7 @@ Users are grouped into behavioral personas:
 
 ### 2. Success Metrics (Activation Ladder)
 
-We define success using a progression of 8 activation flags, representing increasing engagement and platform adoption.
+I defined success using a progression of 8 activation flags which represents increasing engagement and platform adoption.
 
 Examples include:
 
@@ -72,7 +72,7 @@ Examples include:
 
 ### 3. Funnel Analysis
 
-We track user progression through key milestones:
+I tracked user progression through key milestones:
 
 * Entry → First action → Activation → Advanced usage
 
@@ -86,14 +86,14 @@ This helps identify:
 
 ### 4. Friction Analysis
 
-We identify blockers that prevent user success:
+I identified blockers that prevent user success namely:
 
 * Credit limitations
 * Execution failures
 * Agent errors
 * Seat constraints
 
-We measure how each friction point impacts:
+Then measure how each friction point impacts:
 
 * Conversion rates
 * Retention
@@ -115,14 +115,14 @@ This reveals how successful users navigate the platform differently.
 
 ## Key Insights
 
-* Clear behavioral differences exist between high- and low-success users
+* Clear behavioural differences exist between high- and low-success users
 * Early activation signals strongly predict long-term engagement
 * Certain friction points disproportionately impact conversion
 * Successful users follow more structured and repeatable workflows
 
 ---
 
-## Outputs & Visualizations
+## Outputs & Visualisations
 
 * Conversion funnels
 * Persona distributions
@@ -140,13 +140,13 @@ This project is fully reproducible:
 
 * All analysis is contained within the Zerve project
 * Data transformations and models are documented
-* Visualizations are generated programmatically
+* Visualisations are generated programmatically
 
 ---
 
 ## Tech & Approach
 
-* Event-driven behavioral analysis
+* Event-driven behavioural analysis
 * Statistical aggregation
 * Markov chain modeling
 * Funnel and cohort analysis
